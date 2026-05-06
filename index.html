@@ -2,125 +2,165 @@
 	<head>
 		<link href="style.css" rel="stylesheet">
 		<title>Davin Doan resume</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
 		<header id="header">
-			<!-- resume header with your name and title -->
-			<img src="images/profile_pic.jpg" alt="Profile Picture" id="profilePic">
-			<div id="headerContent">
-				<h1>Davin Doan</h1>
-				<hr>
-				Mechanical Engineering Master's Student at Georgia Tech
-				<hr>
+			<div class="header-inner">
+				<img src="images/profile_pic.jpg" alt="Profile Picture" id="profilePic">
+				<div id="headerContent">
+					<h1>Davin Doan</h1>
+					<p class="header-subtitle">Mechanical Engineering Master's Student at Georgia Tech</p>
+					<div class="header-contacts">
+						<a href="mailto:ddoan36@gatech.edu"><span class="contact-dot"></span>ddoan36@gatech.edu</a>
+						<a href="https://linkedin.com/in/davin-doan" target="_blank"><span class="contact-dot"></span>davin-doan</a>
+						<a href="https://drive.google.com/file/d/1sNT2BQHP1buhi-Lq7nED6MDtwg5zLnTs/view?usp=sharing" target="_blank"><span class="contact-dot"></span>davin_doan_portfolio</a>
+					</div>
+				</div>
 			</div>
 		</header>
+
 		<main>
 			<article id="mainLeft">
 				<section>
-					<h2>CONTACT</h2>
-					<!-- contact info including social media -->
-                     <p>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:ddoan36@gatech.edu">ddoan36@gatech.edu</a>
-                     </p>
-                     <p>
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        <a href="linkedin.com/davin-doan">davin-doan</a>
-                     </p>
-                     <p>
-                        <i class="fas fa-globe" aria-hidden="true"></i>
-                        <a href="https://drive.google.com/file/d/1sNT2BQHP1buhi-Lq7nED6MDtwg5zLnTs/view?usp=sharing" target="_blank">davin_doan_portfolio</a>
-                     </p>
+					<h2>Education</h2>
+					<div class="edu-item">
+						<h3>Mechanical Engineering</h3>
+						<p class="org">Georgia Institute of Technology</p>
+						<p class="date">2025 – 2027</p>
+					</div>
+					<div class="edu-item">
+						<h3>Mechanical Engineering</h3>
+						<p class="org">University of Illinois Chicago</p>
+						<p class="date">2021 – 2025</p>
+					</div>
 				</section>
+
 				<section>
-					<h2>SKILLS</h2>
-					<!-- your skills -->
-                         <p>Software and Programming: SolidWorks, Fusion, ANSYS, MATLAB, Simulink, TwinCAT, Python (Pandas, Matplotlib), GNU
-Octave, C++ (Arduino), C, Bash, LAMMPS, Onshape</p>
-<p>Prototyping and Fabrication: 3D printing, mill, sander, drill press, woodworking, sculpting, soldering</p>
+					<h2>Skills</h2>
+					<p class="skill-group-name">Software &amp; Programming</p>
+					<div class="skill-tags">
+						<span class="skill-tag">SolidWorks</span>
+						<span class="skill-tag">Fusion 360</span>
+						<span class="skill-tag">Onshape</span>
+						<span class="skill-tag">ANSYS</span>
+						<span class="skill-tag">MATLAB</span>
+						<span class="skill-tag">Simulink</span>
+						<span class="skill-tag">TwinCAT</span>
+						<span class="skill-tag">Python</span>
+						<span class="skill-tag">Pandas</span>
+						<span class="skill-tag">Matplotlib</span>
+						<span class="skill-tag">C++</span>
+						<span class="skill-tag">C</span>
+						<span class="skill-tag">Bash</span>
+						<span class="skill-tag">LAMMPS</span>
+						<span class="skill-tag">GNU Octave</span>
+					</div>
+					<p class="skill-group-name" style="margin-top: 16px;">Prototyping &amp; Fabrication</p>
+					<div class="skill-tags">
+						<span class="skill-tag">3D Printing</span>
+						<span class="skill-tag">Mill</span>
+						<span class="skill-tag">Sander</span>
+						<span class="skill-tag">Drill Press</span>
+						<span class="skill-tag">Woodworking</span>
+						<span class="skill-tag">Sculpting</span>
+						<span class="skill-tag">Soldering</span>
+					</div>
 				</section>
+
 				<section>
-					<h2>EDUCATION</h2>
-					<!-- your education -->
-                     <h3>Mechanical Engineering</h3>
-                        <p>
-                            Georgia Institute of Technology
-                        </p>
-                        <p>
-                            2025-2027
-                        </p>
-                    <h3>Mechanical Engineering</h3>
-                        <p>
-                            University of Illinois Chicago
-                        </p>
-                        <p>
-                            2021-2025
-                        </p>
-				</section>            
+					<h2>Contact</h2>
+					<p><a href="mailto:ddoan36@gatech.edu" class="sidebar-link">ddoan36@gatech.edu</a></p>
+					<p><a href="https://linkedin.com/in/davin-doan" class="sidebar-link" target="_blank">linkedin.com/in/davin-doan</a></p>
+					<p><a href="https://drive.google.com/file/d/1sNT2BQHP1buhi-Lq7nED6MDtwg5zLnTs/view?usp=sharing" class="sidebar-link" target="_blank">Portfolio (Google Drive)</a></p>
+				</section>
 			</article>
+
 			<article id="mainRight">
 				<section>
-					<h2>ABOUT</h2>
-					<!-- about you -->
-                     <p>Welcome to my website! I'm currently a mechanical engineering master's student at Georgia Tech with a focus in automation, robotics and control. I'm passionate about bridging the gap between mechanical hardware and intelligent control systems for manufacturing, aerospace, and medical tech applications. Actively looking for summer and fall 2026 internships. </p>
+					<h2>About</h2>
+					<p>I'm currently a mechanical engineering master's student at Georgia Tech with a focus in automation, robotics and control. I'm passionate about bridging the gap between mechanical hardware and intelligent control systems for manufacturing, aerospace, and medical tech applications. Actively looking for summer and fall 2026 internships.</p>
 				</section>
+
 				<section>
-					<h2>WORK EXPERIENCE</h2>
-					<!-- your work experience -->
-                     <h3>Research Assistant (LIDAR Lab)</h3>
-                     <p>
-                            Georgia Institute of Technology | Feb. 2026 - Present
-                     </p>
-                     <ul>
-                            <li>Integrating and testing gel-based tactile sensing to improve force control in humanoid loco-manipulation tasks</li>
-                            <li>Led undergraduate students to design and cast gripper pad molds; set up mechanical hardware for UMI-based data collection</li>
-                            <li>Designing a hand-held gripper, chest harness, and forearm sensor mount for G1 humanoid using Onshape while collaborating with embedded and software
-teams</li>
-                     </ul>
-                     <div class="project-images">
-                        <img src="images/gripTac.png" alt="Gripper Design">
-                        <img src="images/chestPlate.png" alt="Chest Harness Design">
-                    </div>
-                     <h3>Laboratory Aide</h3>
-                     <p>
-                            University of Illinois Chicago | May 2023 - Aug. 2023
-                     </p>
-                     <ul>
-                            <li>Conducted extensive molecular dynamics simulations on varying crystal structures, analyzing performance metrics and
-interpreting results using LAMMPS on local and Perlmutter supercomputing platforms</li>
-                            <li>Developed input scripts in LAMMPS and performed data visualization for atomic properties using Python Matplotlib</li>
-                            <li>Simulated nanoscale modeling of materials using Ovito and expanded upon command-line skills; produced a final report</li>
-                     </ul>
-                     <h3>Engineering Intern</h3>
-                     <p>
-                            University of Illinois Chicago | Jun. 2022 - Aug. 2022
-                     </p>
-                     <ul>
-                            <li>Surveyed and wrote several reports on companies involved in hybrid manufacturing and 3D printing fiber composites</li>
-                            <li>Tested standard and flexible resins using a stereolithography 3D printer; 3D printed several different models for public display</li>
-                            <li>Analyzed the printing performance and material quality using different layer exposure times and light intensities</li>
-                     </ul>
+					<h2>Work Experience</h2>
+
+					<div class="job">
+						<div class="job-header">
+							<h3>Research Assistant (LIDAR Lab)</h3>
+							<span class="job-date">Feb. 2026 – Present</span>
+						</div>
+						<p class="job-org">Georgia Institute of Technology</p>
+						<ul>
+							<li>Integrating and testing gel-based tactile sensing to improve force control in humanoid loco-manipulation tasks</li>
+							<li>Led undergraduate students to design and cast gripper pad molds; set up mechanical hardware for UMI-based data collection</li>
+							<li>Designing a hand-held gripper, chest harness, and forearm sensor mount for G1 humanoid using Onshape while collaborating with embedded and software teams</li>
+						</ul>
+						<div class="project-images">
+							<img src="images/gripTac.png" alt="Gripper Design">
+							<img src="images/chestPlate.png" alt="Chest Harness Design">
+						</div>
+					</div>
+
+					<div class="job-divider"></div>
+
+					<div class="job">
+						<div class="job-header">
+							<h3>Laboratory Aide</h3>
+							<span class="job-date">May – Aug. 2023</span>
+						</div>
+						<p class="job-org">University of Illinois Chicago</p>
+						<ul>
+							<li>Conducted extensive molecular dynamics simulations on varying crystal structures, analyzing performance metrics and interpreting results using LAMMPS on local and Perlmutter supercomputing platforms</li>
+							<li>Developed input scripts in LAMMPS and performed data visualization for atomic properties using Python Matplotlib</li>
+							<li>Simulated nanoscale modeling of materials using Ovito and expanded upon command-line skills; produced a final report</li>
+						</ul>
+					</div>
+
+					<div class="job-divider"></div>
+
+					<div class="job">
+						<div class="job-header">
+							<h3>Engineering Intern</h3>
+							<span class="job-date">Jun. – Aug. 2022</span>
+						</div>
+						<p class="job-org">University of Illinois Chicago</p>
+						<ul>
+							<li>Surveyed and wrote several reports on companies involved in hybrid manufacturing and 3D printing fiber composites</li>
+							<li>Tested standard and flexible resins using a stereolithography 3D printer; 3D printed several different models for public display</li>
+							<li>Analyzed the printing performance and material quality using different layer exposure times and light intensities</li>
+						</ul>
+					</div>
 				</section>
-                <section>
-                    <h2>PROJECTS</h2>
-                    
-                    <!-- Project 1 -->
-                    <h3> Senior Design: Drivetrain for NASA Lunabotics Rover</h3>
-                    <p> Collaborated in a team of 4 to design and build a drivetrain for a lunar robot competition entry. The drivetrain was designed to handle the rover's weight and provide reliable performance during the competition. The project was presented at an engineering exhibition. </p>
-                    <div class="project-images">
-                        <img src="images/Lunabotics1.png" alt="Lunabotics Drivetrain 1">
-                        <img src="images/Lunabotics2.png" alt="Lunabotics Drivetrain 2">
-                    </div>
-                    
-                    <!-- Project 2 -->
-                    <h3> Development of Autonomous Drone</h3>
-                    <p> Collaborated cross-functionally with peers to pioneer an autonomous drone capable of object detection and airdrop delivery. The drone was designed to operate at various altitudes for a long duration and safely deliver a payload to a designated location. </p>
-                    <div class="project-images">
-                        <img src="images/drone_project.png" alt="Autonomous Drone">
-                    </div>
-                </section>
+
+				<section>
+					<h2>Projects</h2>
+
+					<div class="job">
+						<div class="job-header">
+							<h3>Senior Design: Drivetrain for NASA Lunabotics Rover</h3>
+						</div>
+						<p>Collaborated in a team of 4 to design and build a drivetrain for a lunar robot competition entry. The drivetrain was designed to handle the rover's weight and provide reliable performance during the competition. The project was presented at an engineering exhibition.</p>
+						<div class="project-images">
+							<img src="images/Lunabotics1.png" alt="Lunabotics Drivetrain 1">
+							<img src="images/Lunabotics2.png" alt="Lunabotics Drivetrain 2">
+						</div>
+					</div>
+
+					<div class="job-divider"></div>
+
+					<div class="job">
+						<div class="job-header">
+							<h3>Development of Autonomous Drone</h3>
+						</div>
+						<p>Collaborated cross-functionally with peers to pioneer an autonomous drone capable of object detection and airdrop delivery. The drone was designed to operate at various altitudes for a long duration and safely deliver a payload to a designated location.</p>
+						<div class="project-images">
+							<img src="images/drone_project.png" alt="Autonomous Drone">
+						</div>
+					</div>
+				</section>
 			</article>
 		</main>
 	</body>
