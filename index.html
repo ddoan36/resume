@@ -119,25 +119,25 @@
 						<p class="paper-venue"><strong>Conference on Robot Learning 2026</strong></p>
 						<div class="research-videos">
 							<figure>
-								<video class="research-video" controls autoplay muted loop preload="metadata" playsinline>
+								<video class="research-video" controls autoplay muted loop preload="auto" playsinline>
 									<source src="videos/data_gathering_beam.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
-								<figcaption>Data gathering on the beam task</figcaption>
+								<figcaption>Data collection on the beam transfer task</figcaption>
 							</figure>
 							<figure>
-								<video class="research-video" controls autoplay muted loop preload="metadata" playsinline>
+								<video class="research-video" controls autoplay muted loop preload="auto" playsinline>
 									<source src="videos/pillow_without_black_bars.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
-								<figcaption>Pillow manipulation experiment</figcaption>
+								<figcaption>Pillow manipulation task</figcaption>
 							</figure>
 							<figure>
-								<video class="research-video" controls autoplay muted loop preload="metadata" playsinline>
+								<video class="research-video" controls autoplay muted loop preload="auto" playsinline>
 									<source src="videos/table_transfer.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
-								<figcaption>Table transfer task</figcaption>
+								<figcaption>Human-robot collaboration task for table transport</figcaption>
 							</figure>
 						</div>
 						<div class="project-images lidar-images">
@@ -222,7 +222,7 @@
 							<h3>Senior Design: Drivetrain for NASA Lunabotics Rover</h3>
 						</div>
 						<p>Collaborated in a team of 4 to design and build a drivetrain for a lunar robot competition entry. The drivetrain was designed to handle the rover's weight and provide reliable performance during the competition. The project was presented at an engineering exhibition.</p>
-						<div class="project-images">
+						<div class="project-images project-media">
 							<figure>
 								<img src="images/Lunabotics1.png" alt="Lunabotics rover drivetrain design">
 								<figcaption>Drivetrain concept and mechanical layout for the NASA Lunabotics rover.</figcaption>
@@ -230,6 +230,13 @@
 							<figure>
 								<img src="images/Lunabotics2.png" alt="Lunabotics rover drivetrain assembly">
 								<figcaption>Fabricated drivetrain assembly prepared for rover testing and exhibition.</figcaption>
+							</figure>
+							<figure>
+								<video class="project-video" controls autoplay muted loop preload="auto" playsinline>
+									<source src="videos/rover_comp_run.MOV">
+									Your browser does not support the video tag.
+								</video>
+								<figcaption>Completed rover drivetrain running during competition testing.</figcaption>
 							</figure>
 						</div>
 					</div>
@@ -241,10 +248,24 @@
 							<h3>Development of Autonomous Drone</h3>
 						</div>
 						<p>Collaborated cross-functionally with peers to pioneer an autonomous drone capable of object detection and airdrop delivery. The drone was designed to operate at various altitudes for a long duration and safely deliver a payload to a designated location.</p>
-						<div class="project-images">
+						<div class="project-images project-media">
 							<figure>
 								<img class="drone-image" src="images/drone_project.png" alt="Autonomous drone project">
 								<figcaption>Autonomous drone prototype designed for object detection and airdrop delivery.</figcaption>
+							</figure>
+							<figure>
+								<video class="project-video" controls autoplay muted loop preload="auto" playsinline>
+									<source src="videos/claw_mechanism.mov">
+									Your browser does not support the video tag.
+								</video>
+								<figcaption>Claw mechanism developed for the autonomous drone payload system.</figcaption>
+							</figure>
+							<figure>
+								<video class="project-video rotated-video" controls autoplay muted loop preload="auto" playsinline>
+									<source src="videos/drone_test_flight.mov">
+									Your browser does not support the video tag.
+								</video>
+								<figcaption>Autonomous drone test flight demonstrating outdoor operation.</figcaption>
 							</figure>
 						</div>
 					</div>
@@ -258,6 +279,19 @@
 		</div>
 
 		<script>
+			document.querySelectorAll('.research-video, .project-video').forEach((video) => {
+				video.muted = true;
+				video.defaultMuted = true;
+
+				function startVideo() {
+					video.play().catch(() => {});
+				}
+
+				video.addEventListener('loadeddata', startVideo);
+				video.addEventListener('canplay', startVideo);
+				startVideo();
+			});
+
 			const lightbox = document.getElementById('imageLightbox');
 			const lightboxImage = lightbox.querySelector('.lightbox-image');
 			const closeButton = lightbox.querySelector('.lightbox-close');

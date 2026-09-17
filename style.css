@@ -265,10 +265,17 @@ ul li::before { content: ''; position: absolute; left: 0; top: 10px; width: 5px;
 .project-images .detail-zoom { transform: scale(1.1); }
 .project-images .detail-zoom:hover, .project-images .detail-zoom:focus-visible { transform: scale(1.14) translateY(-2px); }
 .project-images figure { flex: 1 1 calc(50% - 14px); min-width: 0; text-align: center; }
+.project-media { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 12px; }
+.project-media figure { min-width: 0; }
+.project-media figure img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: white; }
+.project-media figure .drone-image { width: 100%; }
 .lidar-images { gap: 18px 12px; }
 .lidar-images figure { flex-basis: calc(33.333% - 12px); }
 .project-images figure img { display: block; width: 100%; max-width: 100%; }
 .project-images figure .drone-image { width: 72%; margin-left: auto; margin-right: auto; }
+.project-images.project-media figure .drone-image { width: 100%; }
+.project-video { display: block; width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; object-position: center; background: var(--navy); border: 1px solid var(--border); border-radius: 3px; }
+.project-video.rotated-video { transform: rotate(-90deg) scale(0.75); }
 .project-images figcaption { margin-top: 7px; font-size: 0.74rem; line-height: 1.45; color: var(--text-muted); }
 
 .lightbox-open { overflow: hidden; }
@@ -291,6 +298,7 @@ ul li::before { content: ''; position: absolute; left: 0; top: 10px; width: 5px;
 	.research-videos { grid-template-columns: 1fr; gap: 18px; }
 	.project-images { gap: 18px 10px; }
 	.project-images figure { flex-basis: 100%; }
+	.project-media { grid-template-columns: 1fr; gap: 18px; }
 	.lidar-images figure { flex-basis: 100%; }
 	.project-images figure img { height: auto; max-height: 220px; }
 	.image-lightbox { padding: 24px; }
