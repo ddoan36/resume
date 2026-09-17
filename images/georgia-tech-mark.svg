@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 100" role="img" aria-labelledby="title desc">
+  <title id="title">Georgia Tech logo</title>
+  <desc id="desc">Gold Georgia Tech GT mark and navy wordmark</desc>
+  <g fill="#B3A369">
+    <path d="M12 50c0-24 17-39 41-39 16 0 27 5 36 15L77 38c-6-7-13-10-23-10-13 0-22 8-22 22s9 22 22 22c7 0 12-2 16-5v-8H52V47h38v27c-10 8-21 12-38 12-24 0-40-15-40-36z"/>
+    <path d="M72 12h29v18H85v52H62V43h10z"/>
+  </g>
+  <g fill="#003057" font-family="Arial, sans-serif" font-weight="700">
+    <text x="125" y="48" font-size="40">Georgia</text>
+    <text x="125" y="88" font-size="40">Tech</text>
+  </g>
+</svg>

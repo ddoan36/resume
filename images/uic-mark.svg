@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" role="img" aria-labelledby="title desc">
+  <title id="title">University of Illinois Chicago logo</title>
+  <desc id="desc">Red UIC circle mark and navy university wordmark</desc>
+  <circle cx="50" cy="50" r="42" fill="#D50032"/>
+  <text x="14" y="64" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="37" font-weight="700">UIC</text>
+  <g fill="#001E62" font-family="Arial, sans-serif" font-weight="700">
+    <text x="110" y="38" font-size="19" letter-spacing="5">UNIVERSITY OF</text>
+    <text x="110" y="70" font-size="29">ILLINOIS CHICAGO</text>
+  </g>
+</svg>
